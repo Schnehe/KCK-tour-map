@@ -51,7 +51,7 @@
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-  // 1. Karte auf Leidseplein zentrieren
+  // 1. Karte initialisieren
   const map = L.map('map').setView([52.3637, 4.8821], 15);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -59,54 +59,18 @@
     attribution: '© OpenStreetMap'
   }).addTo(map);
 
-  // 2. Dummy-Standorte für die Tour
-  const pois = [
-    {
-      title: "Treffpunkt: Leidseplein",
-      desc: "Hier sammeln wir uns. Zentrale Anlaufstelle.",
-      lat: 52.3637,
-      lng: 4.8821,
-      icon: "mdi-account-group",
-      color: "blue"
-    },
-    {
-      title: "Hotel Catalonia Vondel",
-      desc: "Unser Basecamp für das Wochenende.",
-      lat: 52.3632,
-      lng: 4.8797,
-      icon: "mdi-bed",
-      color: "red"
-    },
-    {
-      title: "Brauerei Tour",
-      desc: "Pflichtprogramm: Kaltgetränke-Verkostung.",
-      lat: 52.3580,
-      lng: 4.8936,
-      icon: "mdi-glass-mug-variant",
-      color: "orange"
-    },
-    {
-      title: "Burger & Snacks",
-      desc: "Mittagessen zur Stärkung.",
-      lat: 52.3675,
-      lng: 4.8708,
-      icon: "mdi-hamburger",
-      color: "green"
-    }
-  ];
-
-  // 3. Eigene Marker-Funktion
+  // 2. Hilfsfunktion: Custom Icon
   function createCustomIcon(iconName, color) {
     return L.divIcon({
-      className: 'custom-div-icon', // Unterdrückt den Standard-Leaflet-Rand
+      className: 'custom-div-icon',
       html: `<div class="custom-marker" style="background-color: ${color};"><i class="mdi ${iconName}"></i></div>`,
       iconSize: [36, 36],
-      iconAnchor: [18, 18], // Zentriert den Kreis exakt auf der Koordinate
+      iconAnchor: [18, 18],
       popupAnchor: [0, -20]
     });
   }
 
-  // 4. Navigations-URL ermitteln (iOS vs. Android)
+  // 3. Hilfsfunktion: Navigations-URL (iOS vs. Android)
   function getNavUrl(lat, lng) {
     const isApple = /iPhone|iPad|iPod/i.test(navigator.userAgent);
     return isApple 
@@ -114,22 +78,30 @@
       : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
   }
 
-  // 5. Marker auf Karte setzen
-  pois.forEach(poi => {
-    const navUrl = getNavUrl(poi.lat, poi.lng);
-    const popupContent = `
-      <div style="min-width: 160px; font-family: sans-serif;">
-        <h3 style="margin: 0 0 6px 0; font-size: 16px;">${poi.title}</h3>
-        <p style="margin: 0 0 8px 0; font-size: 13px;">${poi.desc}</p>
-        <a href="${navUrl}" target="_blank" rel="noopener" class="nav-btn">Route starten</a>
-      </div>
-    `;
-    L.marker([poi.lat, poi.lng], { icon: createCustomIcon(poi.icon, poi.color) })
-      .addTo(map)
-      .bindPopup(popupContent);
-  });
+  // 4. POIs dynamisch aus JSON laden
+  fetch(`./pois.json?v=${Date.now()}`)
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP-Fehler ${res.status}`);
+      return res.json();
+    })
+    .then(pois => {
+      pois.forEach(poi => {
+        const navUrl = getNavUrl(poi.lat, poi.lng);
+        const popupContent = `
+          <div style="min-width: 160px; font-family: sans-serif;">
+            <h3 style="margin: 0 0 6px 0; font-size: 16px;">${poi.title}</h3>
+            <p style="margin: 0 0 8px 0; font-size: 13px;">${poi.desc}</p>
+            <a href="${navUrl}" target="_blank" rel="noopener" class="nav-btn">Route starten</a>
+          </div>
+        `;
+        L.marker([poi.lat, poi.lng], { icon: createCustomIcon(poi.icon, poi.color) })
+          .addTo(map)
+          .bindPopup(popupContent);
+      });
+    })
+    .catch(err => console.error("Konnte pois.json nicht laden:", err));
 
-  // 6. Live-Standort des Nutzers abfragen & als einfachen Punkt anzeigen
+  // 5. Live-Standort des Nutzers tracken
   map.locate({ setView: false, watch: true, enableHighAccuracy: true });
 
   let userMarker = null;
