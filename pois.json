@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Treffpunkt: Leidseplein",
+    "desc": "Zentrale Anlaufstelle & Sammelpunkt.",
+    "lat": 52.3637,
+    "lng": 4.8821,
+    "icon": "mdi-account-group",
+    "color": "#1976d2"
+  },
+  {
+    "title": "Hotel Catalonia Vondel",
+    "desc": "Basecamp für das Wochenende.",
+    "lat": 52.3632,
+    "lng": 4.8797,
+    "icon": "mdi-bed",
+    "color": "#d32f2f"
+  },
+  {
+    "title": "Bierprobe & Kneipe",
+    "desc": "Kaltgetränke und Zwischenstopp.",
+    "lat": 52.3580,
+    "lng": 4.8936,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#f57c00"
+  },
+  {
+    "title": "Burger & Pommes",
+    "desc": "Mittagsstopp zur Stärkung.",
+    "lat": 52.3675,
+    "lng": 4.8708,
+    "icon": "mdi-hamburger",
+    "color": "#388e3c"
+  },
+  {
+    "title": "Grachtenfahrt",
+    "desc": "Treffpunkt am Bootsanleger.",
+    "lat": 52.3615,
+    "lng": 4.8845,
+    "icon": "mdi-ferry",
+    "color": "#7b1fa2"
+  }
+]
