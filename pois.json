@@ -1,42 +1,194 @@
 [
   {
-    "title": "Treffpunkt: Leidseplein",
-    "desc": "Zentrale Anlaufstelle & Sammelpunkt.",
-    "lat": 52.3637,
-    "lng": 4.8821,
-    "icon": "mdi-account-group",
-    "color": "#1976d2"
-  },
-  {
-    "title": "Hotel Catalonia Vondel",
-    "desc": "Basecamp für das Wochenende.",
-    "lat": 52.3632,
-    "lng": 4.8797,
+    "title": "Hotel Vondel",
+    "desc": "Catalonia Vondel Hotel – Basecamp",
+    "lat": 52.3629,
+    "lng": 4.8790,
     "icon": "mdi-bed",
-    "color": "#d32f2f"
+    "color": "#d81b60"
   },
   {
-    "title": "Bierprobe & Kneipe",
-    "desc": "Kaltgetränke und Zwischenstopp.",
-    "lat": 52.3580,
-    "lng": 4.8936,
+    "title": "Belgische Bar",
+    "desc": "Belgisch Bierproeflokaal De Zotte",
+    "lat": 52.3653,
+    "lng": 4.8831,
     "icon": "mdi-glass-mug-variant",
-    "color": "#f57c00"
+    "color": "#0288d1"
   },
   {
-    "title": "Burger & Pommes",
-    "desc": "Mittagsstopp zur Stärkung.",
-    "lat": 52.3675,
-    "lng": 4.8708,
-    "icon": "mdi-hamburger",
-    "color": "#388e3c"
+    "title": "Irish Pub",
+    "desc": "Aran Irish Pub Leidseplein",
+    "lat": 52.3625,
+    "lng": 4.8830,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1"
   },
   {
-    "title": "Grachtenfahrt",
-    "desc": "Treffpunkt am Bootsanleger.",
-    "lat": 52.3615,
-    "lng": 4.8845,
+    "title": "Hard Rock Cafe Amsterdam",
+    "desc": "Max Euweplein am Kanal",
+    "lat": 52.3622,
+    "lng": 4.8829,
+    "icon": "mdi-glass-cocktail",
+    "color": "#0288d1"
+  },
+  {
+    "title": "Bar am Wasser",
+    "desc": "Waterkant – Große Außenterrasse am Wasser",
+    "lat": 52.3672,
+    "lng": 4.8787,
+    "icon": "mdi-glass-cocktail",
+    "color": "#0288d1"
+  },
+  {
+    "title": "Ribs All-you-can",
+    "desc": "Satellite Sports Café Leidseplein",
+    "lat": 52.3643,
+    "lng": 4.8834,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00"
+  },
+  {
+    "title": "Live-Bar für den Abend",
+    "desc": "The Waterhole Live Music Bar",
+    "lat": 52.3639,
+    "lng": 4.8847,
+    "icon": "mdi-guitar-electric",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Techno Lovelee Club",
+    "desc": "Lovelee Club am Leidseplein",
+    "lat": 52.3644,
+    "lng": 4.8824,
+    "icon": "mdi-music",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Nachtclub Social Club",
+    "desc": "Chicago Social Club Leidseplein",
+    "lat": 52.3642,
+    "lng": 4.8835,
+    "icon": "mdi-music",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Party für den Abend",
+    "desc": "Feestcafé / Cooldown Café Leidseplein",
+    "lat": 52.3633,
+    "lng": 4.8839,
+    "icon": "mdi-music",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Frühstück Pancakes",
+    "desc": "PANCAKES Amsterdam Negen Straatjes",
+    "lat": 52.3694,
+    "lng": 4.8840,
+    "icon": "mdi-coffee",
+    "color": "#43a047"
+  },
+  {
+    "title": "Lidl",
+    "desc": "Bilderdijkstraat 43-45",
+    "lat": 52.3683,
+    "lng": 4.8710,
+    "icon": "mdi-cart",
+    "color": "#c2185b"
+  },
+  {
+    "title": "Albert Heijn",
+    "desc": "Supermarkt direkt am Leidseplein",
+    "lat": 52.3630,
+    "lng": 4.8833,
+    "icon": "mdi-cart",
+    "color": "#c2185b"
+  },
+  {
+    "title": "Tretbootfahrt",
+    "desc": "Stromma Pedal Boat Verleih",
+    "lat": 52.3621,
+    "lng": 4.8817,
     "icon": "mdi-ferry",
-    "color": "#7b1fa2"
+    "color": "#fbc02d"
+  },
+  {
+    "title": "Techno Club Prime",
+    "desc": "Club Prime Rembrandtplein",
+    "lat": 52.3659,
+    "lng": 4.8967,
+    "icon": "mdi-music",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Techno Club John Doe",
+    "desc": "Club John Doe Rembrandtplein",
+    "lat": 52.3664,
+    "lng": 4.8973,
+    "icon": "mdi-music",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Nachtclub Escape",
+    "desc": "Escape Amsterdam Rembrandtplein",
+    "lat": 52.3656,
+    "lng": 4.8965,
+    "icon": "mdi-music",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Melkweg Club",
+    "desc": "Konzert- & Clublocation Leidseplein",
+    "lat": 52.3648,
+    "lng": 4.8817,
+    "icon": "mdi-music",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "FEBO",
+    "desc": "Snackwand Leidsestraat 94",
+    "lat": 52.3643,
+    "lng": 4.8850,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00"
+  },
+  {
+    "title": "Thai Restaurant Sawaddee Ka",
+    "desc": "Sawaddee Ka Thai Restaurant Overtoom 13",
+    "lat": 52.3621,
+    "lng": 4.8778,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00"
+  },
+  {
+    "title": "Burger King",
+    "desc": "Burger King Leidseplein",
+    "lat": 52.3639,
+    "lng": 4.8828,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00"
+  },
+  {
+    "title": "McDonald's",
+    "desc": "McDonald's Leidseplein",
+    "lat": 52.3633,
+    "lng": 4.8837,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00"
+  },
+  {
+    "title": "Wok to Walk Leidsestraat",
+    "desc": "Leidsestraat 96",
+    "lat": 52.3642,
+    "lng": 4.8852,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00"
+  },
+  {
+    "title": "Ausschank 't Blauwe Theehuis",
+    "desc": "Brouwerij 't IJ im Vondelpark",
+    "lat": 52.3587,
+    "lng": 4.8690,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1"
   }
 ]
