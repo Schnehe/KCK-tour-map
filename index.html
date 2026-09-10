@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kegeltour Karte</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+  
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; width: 100%; font-family: sans-serif; }
+    #map { height: 100%; width: 100%; }
+    
+    /* Custom Marker Design */
+    .custom-marker {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 20px;
+    }
+    
+    /* Navigation Button im Popup */
+    .nav-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      width: calc(100% - 24px);
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // 1. Karte auf Leidseplein zentrieren
+  const map = L.map('map').setView([52.3637, 4.8821], 15);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  // 2. Dummy-Standorte für die Tour
+  const pois = [
+    {
+      title: "Treffpunkt: Leidseplein",
+      desc: "Hier sammeln wir uns. Zentrale Anlaufstelle.",
+      lat: 52.3637,
+      lng: 4.8821,
+      icon: "mdi-account-group",
+      color: "blue"
+    },
+    {
+      title: "Hotel Catalonia Vondel",
+      desc: "Unser Basecamp für das Wochenende.",
+      lat: 52.3632,
+      lng: 4.8797,
+      icon: "mdi-bed",
+      color: "red"
+    },
+    {
+      title: "Brauerei Tour",
+      desc: "Pflichtprogramm: Kaltgetränke-Verkostung.",
+      lat: 52.3580,
+      lng: 4.8936,
+      icon: "mdi-glass-mug-variant",
+      color: "orange"
+    },
+    {
+      title: "Burger & Snacks",
+      desc: "Mittagessen zur Stärkung.",
+      lat: 52.3675,
+      lng: 4.8708,
+      icon: "mdi-hamburger",
+      color: "green"
+    }
+  ];
+
+  // 3. Eigene Marker-Funktion
+  function createCustomIcon(iconName, color) {
+    return L.divIcon({
+      className: 'custom-div-icon', // Unterdrückt den Standard-Leaflet-Rand
+      html: `<div class="custom-marker" style="background-color: ${color};"><i class="mdi ${iconName}"></i></div>`,
+      iconSize: [36, 36],
+      iconAnchor: [18, 18], // Zentriert den Kreis exakt auf der Koordinate
+      popupAnchor: [0, -20]
+    });
+  }
+
+  // 4. Navigations-URL ermitteln (iOS vs. Android)
+  function getNavUrl(lat, lng) {
+    const isApple = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    return isApple 
+      ? `https://maps.apple.com/?daddr=${lat},${lng}` 
+      : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+  }
+
+  // 5. Marker auf Karte setzen
+  pois.forEach(poi => {
+    const navUrl = getNavUrl(poi.lat, poi.lng);
+    const popupContent = `
+      <div style="min-width: 160px; font-family: sans-serif;">
+        <h3 style="margin: 0 0 6px 0; font-size: 16px;">${poi.title}</h3>
+        <p style="margin: 0 0 8px 0; font-size: 13px;">${poi.desc}</p>
+        <a href="${navUrl}" target="_blank" rel="noopener" class="nav-btn">Route starten</a>
+      </div>
+    `;
+    L.marker([poi.lat, poi.lng], { icon: createCustomIcon(poi.icon, poi.color) })
+      .addTo(map)
+      .bindPopup(popupContent);
+  });
+
+  // 6. Live-Standort des Nutzers abfragen & als einfachen Punkt anzeigen
+  map.locate({ setView: false, watch: true, enableHighAccuracy: true });
+
+  let userMarker = null;
+  map.on('locationfound', (e) => {
+    if (!userMarker) {
+      userMarker = L.circleMarker(e.latlng, {
+        radius: 8,
+        fillColor: '#000000',
+        color: '#ffffff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 1
+      }).addTo(map).bindPopup("Dein Standort");
+    } else {
+      userMarker.setLatLng(e.latlng);
+    }
+  });
+</script>
+
+</body>
+</html>
