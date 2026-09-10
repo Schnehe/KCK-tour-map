@@ -222,5 +222,21 @@
     "lng": 4.870800,
     "icon": "mdi-glass-mug-variant",
     "color": "#0288d1"
+  },
+  {
+    "title": "Biercafé De Spuyt",
+    "desc": "Über 100 Spezialbiere – ideal für den Nachmittag",
+    "lat": 52.363910,
+    "lng": 4.883820,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1"
+  },
+  {
+    "title": "The Chupitos Club",
+    "desc": "Show-Shotbar für den Zwischenstopp vor Mitternacht",
+    "lat": 52.364230,
+    "lng": 4.883780,
+    "icon": "mdi-glass-cocktail",
+    "color": "#8e24aa"
   }
 ]
