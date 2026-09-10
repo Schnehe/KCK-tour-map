@@ -28,7 +28,7 @@
     "desc": "Max Euweplein am Kanal",
     "lat": 52.36209795494364, 
     "lng": 4.882979972946663,
-    "icon": "mdi-glass-cocktail",
+    "icon": "mdi-silverware-fork-knife",
     "color": "#0288d1"
   },
   {
@@ -56,7 +56,7 @@
     "color": "#8e24aa"
   },
   {
-    "title": "Techno Lovelee Club",
+    "title": "Lovelee Club",
     "desc": "Lovelee Club am Leidseplein",
     "lat": 52.36488390960054, 
     "lng": 4.881810045976537,
@@ -81,7 +81,7 @@
   },
   {
     "title": "Frühstück Pancakes",
-    "desc": "PANCAKES Amsterdam Negen Straatjes",
+    "desc": "Kleine Location für Frühstück",
     "lat": 52.362671204476634, 
     "lng": 4.881280162750238,
     "icon": "mdi-coffee",
@@ -120,7 +120,7 @@
     "color": "#8e24aa"
   },
   {
-    "title": "Techno Club John Doe",
+    "title": "Club John Doe",
     "desc": "Club John Doe Rembrandtplein",
     "lat": 52.36651635259013, 
     "lng": 4.8976084603317505,
@@ -188,6 +188,38 @@
     "desc": "Saufen im Park",
     "lat": 52.35899517979503,
     "lng": 4.872613483659472,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1"
+  },
+  {
+    "title": "Studentenbar De Gieter",
+    "desc": "Klassische Studenten-Partybar, günstige Krüge/Pitcher",
+    "lat": 52.362610,
+    "lng": 4.887380,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1"
+  },
+  {
+    "title": "Bourbon Street",
+    "desc": "Live Music Club (Funk, Blues, Rock) bis 05:00 Uhr",
+    "lat": 52.363874,
+    "lng": 4.885323,
+    "icon": "mdi-guitar-electric",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "The Chupitos Club",
+    "desc": "Legendäre Shooter-Bar, über 100 Show-Shots",
+    "lat": 52.364230,
+    "lng": 4.883780,
+    "icon": "mdi-glass-cocktail",
+    "color": "#8e24aa"
+  },
+  {
+    "title": "Gollem's Proeflokaal",
+    "desc": "Top Bierauswahl, mehr Platz als De Zotte",
+    "lat": 52.360150,
+    "lng": 4.870800,
     "icon": "mdi-glass-mug-variant",
     "color": "#0288d1"
   }
