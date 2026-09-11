@@ -269,5 +269,14 @@
     "icon": "mdi-music",
     "color": "#d3d3d3",
     "url": "https://chicagosocialclub.nl/"
+  },
+  {
+    "title": "Kneipentour für Menschen mit Beeinträchtigung",
+    "desc": "Stones Cafe im Rotlichtviertel",
+    "lat": 52.37461889287252, 
+    "lng": 4.897198719167463,
+    "icon": "mdi-wheelchair-accessibility",
+    "color": "#d3d3d3",
+    "url": "https://chicagosocialclub.nl/"
   }
 ]
