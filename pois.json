@@ -33,7 +33,7 @@
     "lng": 4.8846624190617565,
     "icon": "mdi-music",
     "color": "#8e24aa",
-    "url": "https://cooldowncafe.nl/"
+    "url": "https://cooldown.nl/"
   },
   {
     "title": "Poolcafé de Keu",
@@ -177,7 +177,7 @@
     "lng": 4.872613483659472,
     "icon": "mdi-glass-mug-variant",
     "color": "#0288d1",
-    "url": "https://brouwerijhetij.nl/proeflokalen/het-blauwe-theehuis/"
+    "url": "https://brouwerijhetij.nl/proeflokalen/t-blauwe-theehuis"
   },
   {
     "title": "Lidl",
@@ -204,7 +204,7 @@
     "lng":  4.880753446618983,
     "icon": "mdi-ferry",
     "color": "#fbc02d",
-    "url": "https://www.stromma.com/nl-nl/amsterdam/sightseeing/waterfietsen/"
+    "url": "https://www.getyourguide.com/amsterdam-l36/amsterdam-einzigartiges-tretboot-erlebnis-in-den-grachten-t54372/?ranking_uuid=2c955a49-e610-4bf6-99a8-24b277fb16f0&referral_redirect=1&q=Amsterdam"
   },
   {
     "title": "Club Prime",
@@ -294,6 +294,6 @@
     "lng": 4.897198719167463,
     "icon": "mdi-wheelchair-accessibility",
     "color": "#d3d3d3",
-    "url": "https://chicagosocialclub.nl/"
+    "url": "https://stonescafe.nl/"
   }
 ]
