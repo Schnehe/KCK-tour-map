@@ -26,18 +26,41 @@
       font-size: 18px;
     }
     
-    .nav-btn {
-      display: inline-block;
-      margin-top: 10px;
+    /* Buttons im Popup */
+    .popup-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      box-sizing: border-box;
       padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .web-btn {
+      background: #f1f3f5;
+      color: #333;
+      border: 1px solid #ced4da;
+      margin-top: 10px;
+      margin-bottom: 6px;
+    }
+
+    .web-btn:active {
+      background: #e9ecef;
+    }
+
+    .nav-btn {
       background: #007bff;
       color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: center;
-      width: calc(100% - 24px);
+    }
+
+    .nav-btn:active {
+      background: #0056b3;
     }
 
     /* Floating Menu Button */
@@ -86,7 +109,7 @@
     }
     #sidebar.active { right: 0; }
 
-    /* Header im Menü mit Logo */
+    /* Header im Menü */
     .sidebar-header {
       padding: 16px;
       border-bottom: 1px solid #eee;
@@ -162,7 +185,6 @@
 
 <div id="sidebar">
   <div class="sidebar-header">
-    <!-- Lege eine logo.png in dein Repo oder passe den Pfad an -->
     <img src="./logo.png" alt="Logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23555\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg>'">
     <div class="sidebar-title">Kegeltour Amsterdam</div>
     <button class="close-btn" id="close-btn"><i class="mdi mdi-close"></i></button>
@@ -182,7 +204,6 @@
     attribution: '© OpenStreetMap'
   }).addTo(map);
 
-  // UI-Logik für Seitenleiste
   const sidebar = document.getElementById('sidebar');
   const backdrop = document.getElementById('backdrop');
   const poiList = document.getElementById('poi-list');
@@ -216,7 +237,6 @@
       : `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
   }
 
-  // POIs laden & Liste generieren
   fetch(`./pois.json?v=${Date.now()}`)
     .then(res => res.json())
     .then(pois => {
@@ -226,15 +246,21 @@
         }).addTo(map);
 
         const navUrl = getNavUrl(poi.lat, poi.lng);
+        
+        // Website-Button nur generieren, wenn poi.url vorhanden ist
+        const webButtonHtml = poi.url 
+          ? `<a href="${poi.url}" target="_blank" rel="noopener" class="popup-btn web-btn"><i class="mdi mdi-open-in-new"></i> Website / Info</a>` 
+          : '';
+
         marker.bindPopup(`
-          <div style="min-width: 160px; font-family: sans-serif;">
+          <div style="min-width: 180px; font-family: sans-serif;">
             <h3 style="margin: 0 0 6px 0; font-size: 15px;">${poi.title}</h3>
-            <p style="margin: 0 0 8px 0; font-size: 13px; color: #555;">${poi.desc}</p>
-            <a href="${navUrl}" target="_blank" rel="noopener" class="nav-btn">Route starten</a>
+            <p style="margin: 0 0 8px 0; font-size: 13px; color: #555; line-height: 1.4;">${poi.desc}</p>
+            ${webButtonHtml}
+            <a href="${navUrl}" target="_blank" rel="noopener" class="popup-btn nav-btn"><i class="mdi mdi-navigation"></i> Route starten</a>
           </div>
         `);
 
-        // Eintrag für Sidebar-Liste erstellen
         const li = document.createElement('li');
         li.className = 'poi-item';
         li.innerHTML = `
@@ -255,7 +281,6 @@
     })
     .catch(err => console.error("Fehler beim Laden der Orte:", err));
 
-  // Live-Standort Nutzer
   map.locate({ setView: false, watch: true, enableHighAccuracy: true });
   let userMarker = null;
 
