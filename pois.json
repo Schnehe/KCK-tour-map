@@ -13,15 +13,17 @@
     "lat": 52.36618921463739, 
     "lng": 4.881010948253931,
     "icon": "mdi-glass-mug-variant",
-    "color": "#0288d1"
+    "color": "#0288d1",
+    "url": "https://www.cafedezotte.nl/"
   },
   {
     "title": "Irish Pub",
-    "desc": "Aran Irish Pub Leidseplein",
+    "desc": "Billard, deftiges Essen, eher gemütlich",
     "lat": 52.36220791256473, 
     "lng": 4.882619919247342,
     "icon": "mdi-glass-mug-variant",
-    "color": "#0288d1"
+    "color": "#D3D3D3",
+    "url": "https://www.tripadvisor.de/Restaurant_Review-g188590-d3510082-Reviews-Aran_Irish_Pub-Amsterdam_North_Holland_Province.html"
   },
   {
     "title": "Hard Rock Cafe Amsterdam",
@@ -29,15 +31,17 @@
     "lat": 52.36209795494364, 
     "lng": 4.882979972946663,
     "icon": "mdi-silverware-fork-knife",
-    "color": "#0288d1"
+    "color": "#D3D3D3",
+    "url": "https://cafe.hardrock.com/amsterdam/"
   },
   {
     "title": "Bar am Wasser",
-    "desc": "Waterkant – Große Außenterrasse am Wasser",
+    "desc": "Genial bei Sonne am Nachmittag direkt am Kai. Ab 20:30 Uhr bildet sich am Wochenende jedoch eine massive Einlassschlange an der Brücke.",
     "lat": 52.37027879829914, 
     "lng": 4.876005584549478,
     "icon": "mdi-glass-cocktail",
-    "color": "#0288d1"
+    "color": "#0288d1",
+    "url": "https://www.waterkantamsterdam.nl/"
   },
   {
     "title": "Ribs All-you-can",
@@ -45,7 +49,8 @@
     "lat": 52.364087987486364, 
     "lng": 4.883476852636678,
     "icon": "mdi-silverware-fork-knife",
-    "color": "#fb8c00"
+    "color": "#fb8c00",
+    "url": "https://satellitesportscafe.nl/"
   },
   {
     "title": "Live-Bar für den Abend",
@@ -53,23 +58,24 @@
     "lat": 52.364956661959724, 
     "lng": 4.882646649298588,
     "icon": "mdi-guitar-electric",
-    "color": "#8e24aa"
+    "color": "#8e24aa",
+    "url": "https://waterhole.nl/"
   },
   {
     "title": "Lovelee Club",
-    "desc": "Lovelee Club am Leidseplein",
+    "desc": "Haben ein junges Publikum (Anfang 20) und selektieren an der Tür nach Geschlechterquote. Mit 12 Männern um die 40 besser Tickets kaufen.",
     "lat": 52.36488390960054, 
     "lng": 4.881810045976537,
     "icon": "mdi-music",
-    "color": "#8e24aa"
+    "color": "#D3D3D3"
   },
   {
-    "title": "Nachtclub Social Club",
-    "desc": "Chicago Social Club Leidseplein",
+    "title": "Nachtclub Chicago Social Club",
+    "desc": "Haben ein junges Publikum (Anfang 20) und selektieren an der Tür nach Geschlechterquote. Mit 12 Männern um die 40 besser Tickets kaufen.",
     "lat": 52.36465683404398, 
     "lng": 4.882646555883847,
     "icon": "mdi-music",
-    "color": "#8e24aa"
+    "color": "#D3D3D3"
   },
   {
     "title": "Party für den Abend",
@@ -112,20 +118,22 @@
     "color": "#fbc02d"
   },
   {
-    "title": "Techno Club Prime",
-    "desc": "Club Prime Rembrandtplein",
+    "title": "Club Prime",
+    "desc": "Club Prime Rembrandtplein.",
     "lat": 52.365743912524266, 
     "lng": 4.896309234147894,
     "icon": "mdi-music",
-    "color": "#8e24aa"
+    "color": "#D3D3D3",
+    "url": "https://www.clubprime.nl/home"
   },
   {
-    "title": "Club John Doe",
+    "title": "Techno Club John Doe",
     "desc": "Club John Doe Rembrandtplein",
     "lat": 52.36651635259013, 
     "lng": 4.8976084603317505,
     "icon": "mdi-music",
-    "color": "#8e24aa"
+    "color": "#8e24aa",
+    "url": "https://www.clubjohndoe.nl/home"
   },
   {
     "title": "Nachtclub Escape",
@@ -133,7 +141,8 @@
     "lat": 52.366420699031636, 
     "lng": 4.896422188046328,
     "icon": "mdi-music",
-    "color": "#8e24aa"
+    "color": "#8e24aa",
+    "url": "https://escape.nl/en/agenda/"
   },
   {
     "title": "Melkweg Club",
@@ -193,7 +202,7 @@
   },
   {
     "title": "Studentenbar De Gieter",
-    "desc": "Klassische Studenten-Partybar, günstige Krüge/Pitcher",
+    "desc": "Das studentische Epizentrum am Leidseplein. Laut, günstig, keine Tür-Schikane",
     "lat": 52.362610,
     "lng": 4.887380,
     "icon": "mdi-glass-mug-variant",
@@ -201,7 +210,7 @@
   },
   {
     "title": "Bourbon Street",
-    "desc": "Live Music Club (Funk, Blues, Rock) bis 05:00 Uhr",
+    "desc": "Neben The Waterhole der beste Spot für eure Altersgruppe: Live-Acts bis in die frühen Morgenstunden und entspannte Türsteher",
     "lat": 52.363874,
     "lng": 4.885323,
     "icon": "mdi-guitar-electric",
@@ -209,7 +218,7 @@
   },
   {
     "title": "The Chupitos Club",
-    "desc": "Legendäre Shooter-Bar, über 100 Show-Shots",
+    "desc": "Über 100 Show-Shots mit Feuer, Tricks und Requisiten. Stark studentisch geprägt, laut, voller Energie",
     "lat": 52.364230,
     "lng": 4.883780,
     "icon": "mdi-glass-cocktail",
