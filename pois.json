@@ -144,7 +144,7 @@
     "url": "http://www.sawaddeeka.nl/"
   },
   {
-    "title": "Ribs All-you-can",
+    "title": "Frühstück ab 10 und Ribs All-you-can",
     "desc": "Unkompliziertes All-You-Can-Eat (Spare Ribs) & Sportübertragungen. Gute Wahl für den großen Hunger.",
     "lat": 52.364087987486364, 
     "lng": 4.883476852636678,
@@ -161,6 +161,15 @@
     "color": "#43a047",
     "url": "https://pancakes.amsterdam/"
   },
+  {
+    "title": "Frühstück und Kneipe Hoopman",
+    "desc": "Traditioneller Pub direkt am Leidseplein mit großer Terrasse. Perfekt für deftiges Frühstück (English Breakfast, Omeletts) und das erste frisch gezapfte Konterbier ab 10:00 Uhr.",
+    "lat": 52.364400,
+    "lng": 4.883100,
+    "icon": "mdi-coffee",
+    "color": "#0288d1",
+    "url": "https://www.cafehoopman.nl/"
+  }
   {
     "title": "Ausschank 't Blauwe Theehuis",
     "desc": "Herrlicher Biergarten im Vondelpark. Schließt um 20 Uhr, ideal für ein Nachmittagsbier.",
@@ -243,11 +252,11 @@
     "url": "https://www.mcdonalds.com/nl/"
   },
   {
-    "title": "Irish Pub",
+    "title": "Frühstück und Irish Pub",
     "desc": "Gemütlicher Pub für Billard und deftiges Essen in entspannter Atmosphäre. Gute Backup-Option.",
     "lat": 52.36220791256473, 
     "lng": 4.882619919247342,
-    "icon": "mdi-glass-mug-variant",
+    "icon": "mdi-coffee",
     "color": "#d3d3d3",
     "url": "http://www.aranpub.nl/"
   },
