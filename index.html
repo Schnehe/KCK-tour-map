@@ -199,9 +199,9 @@
   const map = L.map('map', { zoomControl: false }).setView([52.3637, 4.8821], 15);
   L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    maxZoom: 20,
+    attribution: '© <a href="https://carto.com/">CARTO</a>'
   }).addTo(map);
 
   const sidebar = document.getElementById('sidebar');
