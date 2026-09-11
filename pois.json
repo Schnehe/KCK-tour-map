@@ -1,15 +1,16 @@
 [
   {
     "title": "Hotel Vondel",
-    "desc": "Catalonia Vondel Hotel – Basecamp",
+    "desc": "Unser Basecamp für das Wochenende. Perfekt gelegen nahe Leidseplein.",
     "lat": 52.36265190013735, 
     "lng": 4.87809119013631,
     "icon": "mdi-bed",
-    "color": "#d81b60"
+    "color": "#d81b60",
+    "url": "https://www.cataloniahotels.com/en/hotel/catalonia-vondel-amsterdam"
   },
   {
     "title": "Belgische Bar",
-    "desc": "Belgisch Bierproeflokaal De Zotte",
+    "desc": "Uriges belgisches Biercafé (De Zotte) mit riesiger Auswahl. Am besten vor 18 Uhr für einen Tisch ansteuern.",
     "lat": 52.36618921463739, 
     "lng": 4.881010948253931,
     "icon": "mdi-glass-mug-variant",
@@ -17,44 +18,8 @@
     "url": "https://www.cafedezotte.nl/"
   },
   {
-    "title": "Irish Pub",
-    "desc": "Billard, deftiges Essen, eher gemütlich",
-    "lat": 52.36220791256473, 
-    "lng": 4.882619919247342,
-    "icon": "mdi-glass-mug-variant",
-    "color": "#D3D3D3",
-    "url": "https://www.tripadvisor.de/Restaurant_Review-g188590-d3510082-Reviews-Aran_Irish_Pub-Amsterdam_North_Holland_Province.html"
-  },
-  {
-    "title": "Hard Rock Cafe Amsterdam",
-    "desc": "Max Euweplein am Kanal",
-    "lat": 52.36209795494364, 
-    "lng": 4.882979972946663,
-    "icon": "mdi-silverware-fork-knife",
-    "color": "#D3D3D3",
-    "url": "https://cafe.hardrock.com/amsterdam/"
-  },
-  {
-    "title": "Bar am Wasser",
-    "desc": "Genial bei Sonne am Nachmittag direkt am Kai. Ab 20:30 Uhr bildet sich am Wochenende jedoch eine massive Einlassschlange an der Brücke.",
-    "lat": 52.37027879829914, 
-    "lng": 4.876005584549478,
-    "icon": "mdi-glass-cocktail",
-    "color": "#0288d1",
-    "url": "https://www.waterkantamsterdam.nl/"
-  },
-  {
-    "title": "Ribs All-you-can",
-    "desc": "Satellite Sports Café Leidseplein",
-    "lat": 52.364087987486364, 
-    "lng": 4.883476852636678,
-    "icon": "mdi-silverware-fork-knife",
-    "color": "#fb8c00",
-    "url": "https://satellitesportscafe.nl/"
-  },
-  {
     "title": "Live-Bar für den Abend",
-    "desc": "The Waterhole Live Music Bar",
+    "desc": "Großartige Live-Musik-Bar mit Billard. Lockere Tür, ideal als abendlicher Treffpunkt für unsere Gruppe.",
     "lat": 52.364956661959724, 
     "lng": 4.882646649298588,
     "icon": "mdi-guitar-electric",
@@ -62,190 +27,247 @@
     "url": "https://waterhole.nl/"
   },
   {
-    "title": "Lovelee Club",
-    "desc": "Haben ein junges Publikum (Anfang 20) und selektieren an der Tür nach Geschlechterquote. Mit 12 Männern um die 40 besser Tickets kaufen.",
-    "lat": 52.36488390960054, 
-    "lng": 4.881810045976537,
-    "icon": "mdi-music",
-    "color": "#D3D3D3"
-  },
-  {
-    "title": "Nachtclub Chicago Social Club",
-    "desc": "Haben ein junges Publikum (Anfang 20) und selektieren an der Tür nach Geschlechterquote. Mit 12 Männern um die 40 besser Tickets kaufen.",
-    "lat": 52.36465683404398, 
-    "lng": 4.882646555883847,
-    "icon": "mdi-music",
-    "color": "#D3D3D3"
-  },
-  {
     "title": "Party für den Abend",
-    "desc": "Cooldown Café Leidseplein",
+    "desc": "Ausgelassene Party-Kneipe für den späteren Abend (Cooldown Café). Unkompliziert und stimmungsvoll.",
     "lat": 52.36389811637662, 
     "lng": 4.8846624190617565,
     "icon": "mdi-music",
-    "color": "#8e24aa"
+    "color": "#8e24aa",
+    "url": "https://cooldowncafe.nl/"
+  },
+  
+  {
+    "title": "Studentenbar De Gieter",
+    "desc": "Lautes und geselliges Studentenlokal mit extrem günstigen Bier-Pitchern. Perfekt für den unkomplizierten Start in den Abend.",
+    "lat": 52.362610,
+    "lng": 4.887380,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1",
+    "url": "https://cafedegieter.nl/"
+  },
+  {
+    "title": "Bourbon Street",
+    "desc": "Erstklassiger Live-Music-Club für Funk, Blues und Rock. Entspannte Atmosphäre und Musik bis in die Morgenstunden.",
+    "lat": 52.363874,
+    "lng": 4.885323,
+    "icon": "mdi-guitar-electric",
+    "color": "#8e24aa",
+    "url": "https://bourbonstreet.nl/"
+  },
+  {
+    "title": "The Chupitos Club",
+    "desc": "Legendäre Shooter-Bar mit feurigen Show-Shots. Macht Laune für einen 45-Minuten-Stopp vor dem Club.",
+    "lat": 52.364230,
+    "lng": 4.883780,
+    "icon": "mdi-glass-cocktail",
+    "color": "#8e24aa",
+    "url": "https://chupitos.nl/"
+  },
+  {
+    "title": "Gollem's Proeflokaal",
+    "desc": "Urgemütliche Kneipe mit hervorragender Craft-Bier-Auswahl. Bietet etwas mehr Raum als De Zotte.",
+    "lat": 52.360150,
+    "lng": 4.870800,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1",
+    "url": "https://cafegollem.nl/"
+  },
+  {
+    "title": "Biercafé De Spuyt",
+    "desc": "Tolles Bierlokal mit riesiger Auswahl (über 100 Biere). Eher klein, daher ideal für einen entspannten Nachmittags-Stopp.",
+    "lat": 52.363910,
+    "lng": 4.883820,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1",
+    "url": "https://www.facebook.com/cafedespuyt"
+  },
+  {
+    "title": "Bar am Wasser",
+    "desc": "Große Sonnenterrasse am Wasser (Waterkant). Super für den Nachmittag, abends jedoch meist sehr voll mit langer Schlange.",
+    "lat": 52.37027879829914, 
+    "lng": 4.876005584549478,
+    "icon": "mdi-glass-cocktail",
+    "color": "#0288d1",
+    "url": "https://www.waterkantamsterdam.nl/"
+  },
+  {
+    "title": "Melkweg Club",
+    "desc": "Kultige Location am Leidseplein für Konzerte und Clubnächte. Programm und Vorverkauf vorher checken.",
+    "lat": 52.36484053516081, 
+    "lng": 4.881220032772141,
+    "icon": "mdi-music",
+    "color": "#8e24aa",
+    "url": "https://www.melkweg.nl/"
+  },
+  {
+    "title": "FEBO",
+    "desc": "Die legendäre holländische Snackwand. Perfekt für den unkomplizierten Mitternachtshunger auf dem Heimweg.",
+    "lat": 52.364812289144226,
+    "lng": 4.883718865104624,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00",
+    "url": "https://www.febo.nl/"
+  },
+  {
+    "title": "Wok to Walk Leidsestraat",
+    "desc": "Frisch zubereitete Wok-Gerichte auf die Hand. Ideal für den schnellen Hunger beim Locationwechsel.",
+    "lat": 52.36479872489922,
+    "lng": 4.883625893389459,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00",
+    "url": "https://www.woktowalk.com/"
+  },
+  {
+    "title": "Food-Court Foodhallen",
+    "desc": "Große Street-Food-Markthalle mit über 20 Ständen und Bars. Ideal für 12 Mann, da jeder ohne Rechnungsstress selbst bestellt. Ab 18:30 Uhr voll, Tische rechtzeitig sichern.",
+    "lat": 52.36687451891553,
+    "lng": 4.867914268496039,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00",
+    "url": "https://www.foodhallen.nl/"
+  },
+  {
+    "title": "Thai Restaurant Sawaddee Ka",
+    "desc": "Gutes Thai-Essen in der Nähe des Hotels. Eine solide und schmackhafte Grundlage für den Abend.",
+    "lat": 52.36309096025191,
+    "lng": 4.876827807229493,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00",
+    "url": "http://www.sawaddeeka.nl/"
+  },
+  {
+    "title": "Ribs All-you-can",
+    "desc": "Unkompliziertes All-You-Can-Eat (Spare Ribs) & Sportübertragungen. Gute Wahl für den großen Hunger.",
+    "lat": 52.364087987486364, 
+    "lng": 4.883476852636678,
+    "icon": "mdi-silverware-fork-knife",
+    "color": "#fb8c00",
+    "url": "https://satellitesportscafe.nl/"
   },
   {
     "title": "Frühstück Pancakes",
-    "desc": "Kleine Location für Frühstück",
+    "desc": "Beliebte Pancake-Adresse für das Frühstück. Die Plätze sind begrenzt, daher am Wochenende etwas Wartezeit einplanen.",
     "lat": 52.362671204476634, 
     "lng": 4.881280162750238,
     "icon": "mdi-coffee",
-    "color": "#43a047"
+    "color": "#43a047",
+    "url": "https://pancakes.amsterdam/"
+  },
+  {
+    "title": "Ausschank 't Blauwe Theehuis",
+    "desc": "Herrlicher Biergarten im Vondelpark. Schließt um 20 Uhr, ideal für ein Nachmittagsbier.",
+    "lat": 52.35899517979503,
+    "lng": 4.872613483659472,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#0288d1",
+    "url": "https://brouwerijhetij.nl/proeflokalen/het-blauwe-theehuis/"
   },
   {
     "title": "Lidl",
-    "desc": "Frühstück/Bier/Schnaps",
+    "desc": "Supermarkt für die schnelle Versorgung mit Getränken und Snacks.",
     "lat": 52.36451608850742, 
     "lng": 4.876326762884342,
     "icon": "mdi-cart",
-    "color": "#c2185b"
+    "color": "#c2185b",
+    "url": "https://www.lidl.nl/"
   },
   {
     "title": "Albert Heijn",
-    "desc": "Supermarkt direkt am Leidseplein",
+    "desc": "Zentraler Supermarkt direkt am Leidseplein für die Proviant-Aufstockung zwischendurch.",
     "lat": 52.36341303978156, 
     "lng": 4.882061220530636,
     "icon": "mdi-cart",
-    "color": "#c2185b"
+    "color": "#c2185b",
+    "url": "https://www.ah.nl/"
   },
   {
     "title": "Tretbootfahrt",
-    "desc": "Stromma Pedal Boat Verleih",
+    "desc": "Spaßige Tretboot-Tour durch die Grachten für ein entspanntes Tagesprogramm.",
     "lat": 52.36341304019259,
     "lng":  4.880753446618983,
     "icon": "mdi-ferry",
-    "color": "#fbc02d"
+    "color": "#fbc02d",
+    "url": "https://www.stromma.com/nl-nl/amsterdam/sightseeing/waterfietsen/"
   },
   {
     "title": "Club Prime",
-    "desc": "Club Prime Rembrandtplein.",
+    "desc": "EDM und Chart-Hits am Rembrandtplein. Vorher unbedingt in kleinere Gruppen aufteilen für den Einlass.",
     "lat": 52.365743912524266, 
     "lng": 4.896309234147894,
     "icon": "mdi-music",
-    "color": "#D3D3D3",
+    "color": "#d3d3d3",
     "url": "https://www.clubprime.nl/home"
   },
   {
     "title": "Techno Club John Doe",
-    "desc": "Club John Doe Rembrandtplein",
+    "desc": "Elektronische Beats am Rembrandtplein. Für den spontanen Einlass als Männergruppe etwas herausfordernd.",
     "lat": 52.36651635259013, 
     "lng": 4.8976084603317505,
     "icon": "mdi-music",
-    "color": "#8e24aa",
+    "color": "#d3d3d3",
     "url": "https://www.clubjohndoe.nl/home"
   },
   {
     "title": "Nachtclub Escape",
-    "desc": "Escape Amsterdam Rembrandtplein",
+    "desc": "Einer der größten Clubs Amsterdams. Am Wochenende ohne Tischreservierung für große Gruppen schwierig.",
     "lat": 52.366420699031636, 
     "lng": 4.896422188046328,
     "icon": "mdi-music",
-    "color": "#8e24aa",
+    "color": "#d3d3d3",
     "url": "https://escape.nl/en/agenda/"
   },
   {
-    "title": "Melkweg Club",
-    "desc": "Konzert- & Clublocation Leidseplein",
-    "lat": 52.36484053516081, 
-    "lng": 4.881220032772141,
-    "icon": "mdi-music",
-    "color": "#8e24aa"
-  },
-  {
-    "title": "FEBO",
-    "desc": "Snackwand Leidsestraat 94",
-    "lat": 52.364812289144226,
-    "lng": 4.883718865104624,
-    "icon": "mdi-silverware-fork-knife",
-    "color": "#fb8c00"
-  },
-  {
-    "title": "Thai Restaurant Sawaddee Ka",
-    "desc": "Sawaddee Ka Thai Restaurant Overtoom 13",
-    "lat": 52.36309096025191,
-    "lng": 4.876827807229493,
-    "icon": "mdi-silverware-fork-knife",
-    "color": "#fb8c00"
-  },
-  {
     "title": "Burger King",
-    "desc": "Burger King Leidseplein",
+    "desc": "Schnelles Fast-Food direkt am Party-Zentrum Leidseplein.",
     "lat": 52.36439623403285,
     "lng": 4.88365382322477,
     "icon": "mdi-silverware-fork-knife",
-    "color": "#fb8c00"
+    "color": "#d3d3d3",
+    "url": "https://www.burgerking.nl/"
   },
   {
     "title": "McDonald's",
-    "desc": "McDonald's Leidseplein",
+    "desc": "Der Klassiker für den schnellen Burger zwischendurch, mitten im Geschehen.",
     "lat": 52.36463825185325,
     "lng": 4.883834961913482,
     "icon": "mdi-silverware-fork-knife",
-    "color": "#fb8c00"
+    "color": "#d3d3d3",
+    "url": "https://www.mcdonalds.com/nl/"
   },
   {
-    "title": "Wok to Walk Leidsestraat",
-    "desc": "Leidsestraat 96",
-    "lat": 52.36479872489922,
-    "lng": 4.883625893389459,
+    "title": "Irish Pub",
+    "desc": "Gemütlicher Pub für Billard und deftiges Essen in entspannter Atmosphäre. Gute Backup-Option.",
+    "lat": 52.36220791256473, 
+    "lng": 4.882619919247342,
+    "icon": "mdi-glass-mug-variant",
+    "color": "#d3d3d3",
+    "url": "http://www.aranpub.nl/"
+  },
+  {
+    "title": "Hard Rock Cafe Amsterdam",
+    "desc": "Klassische Burger und Drinks am Kanal. Sehr touristisch, daher eher eine Option mit Prio B.",
+    "lat": 52.36209795494364, 
+    "lng": 4.882979972946663,
     "icon": "mdi-silverware-fork-knife",
-    "color": "#fb8c00"
+    "color": "#d3d3d3",
+    "url": "https://cafe.hardrock.com/amsterdam/"
   },
   {
-    "title": "Ausschank 't Blauwe Theehuis",
-    "desc": "Saufen im Park",
-    "lat": 52.35899517979503,
-    "lng": 4.872613483659472,
-    "icon": "mdi-glass-mug-variant",
-    "color": "#0288d1"
+    "title": "Lovelee Club",
+    "desc": "House & Disco Club mit jüngerem Publikum. Als große Herrengruppe ist der Vorverkauf von Tickets für den Einlass dringend empfohlen.",
+    "lat": 52.36488390960054, 
+    "lng": 4.881810045976537,
+    "icon": "mdi-music",
+    "color": "#d3d3d3",
+    "url": "https://lovelee.nl/"
   },
   {
-    "title": "Studentenbar De Gieter",
-    "desc": "Das studentische Epizentrum am Leidseplein. Laut, günstig, keine Tür-Schikane",
-    "lat": 52.362610,
-    "lng": 4.887380,
-    "icon": "mdi-glass-mug-variant",
-    "color": "#0288d1"
-  },
-  {
-    "title": "Bourbon Street",
-    "desc": "Neben The Waterhole der beste Spot für eure Altersgruppe: Live-Acts bis in die frühen Morgenstunden und entspannte Türsteher",
-    "lat": 52.363874,
-    "lng": 4.885323,
-    "icon": "mdi-guitar-electric",
-    "color": "#8e24aa"
-  },
-  {
-    "title": "The Chupitos Club",
-    "desc": "Über 100 Show-Shots mit Feuer, Tricks und Requisiten. Stark studentisch geprägt, laut, voller Energie",
-    "lat": 52.364230,
-    "lng": 4.883780,
-    "icon": "mdi-glass-cocktail",
-    "color": "#8e24aa"
-  },
-  {
-    "title": "Gollem's Proeflokaal",
-    "desc": "Top Bierauswahl, mehr Platz als De Zotte",
-    "lat": 52.360150,
-    "lng": 4.870800,
-    "icon": "mdi-glass-mug-variant",
-    "color": "#0288d1"
-  },
-  {
-    "title": "Biercafé De Spuyt",
-    "desc": "Über 100 Spezialbiere – ideal für den Nachmittag",
-    "lat": 52.363910,
-    "lng": 4.883820,
-    "icon": "mdi-glass-mug-variant",
-    "color": "#0288d1"
-  },
-  {
-    "title": "The Chupitos Club",
-    "desc": "Show-Shotbar für den Zwischenstopp vor Mitternacht",
-    "lat": 52.364230,
-    "lng": 4.883780,
-    "icon": "mdi-glass-cocktail",
-    "color": "#8e24aa"
+    "title": "Nachtclub Chicago Social Club",
+    "desc": "Bekannter Nachtclub am Leidseplein. Auch hier gilt: Vorab Tickets sichern, da der spontane Einlass für große Gruppen schwierig ist.",
+    "lat": 52.36465683404398, 
+    "lng": 4.882646555883847,
+    "icon": "mdi-music",
+    "color": "#d3d3d3",
+    "url": "https://chicagosocialclub.nl/"
   }
 ]
