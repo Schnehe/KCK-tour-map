@@ -38,10 +38,10 @@
   {
     "title": "Poolcafé de Keu",
     "desc": "Darts- und Billardkneipe nur 2 Gehminuten vom Hotel. Ideal für ein paar Runden Pool und Bier direkt nach dem Check-in oder vor dem Gang zum Leidseplein.",
-    "lat": 52.363120,
-    "lng": 4.877080,
+    "lat": 52.3641652319352, 
+    "lng": 4.877939867657389,
     "icon": "mdi-billiards",
-    "color": "#0288d1",
+    "color": "#fbc02d",
     "url": "http://www.poolcafedekeu.nl/"
   },
   {
