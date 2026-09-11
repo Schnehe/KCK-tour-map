@@ -35,7 +35,15 @@
     "color": "#8e24aa",
     "url": "https://cooldowncafe.nl/"
   },
-  
+  {
+    "title": "Poolcafé de Keu",
+    "desc": "Darts- und Billardkneipe nur 2 Gehminuten vom Hotel. Ideal für ein paar Runden Pool und Bier direkt nach dem Check-in oder vor dem Gang zum Leidseplein.",
+    "lat": 52.363120,
+    "lng": 4.877080,
+    "icon": "mdi-billiards",
+    "color": "#0288d1",
+    "url": "http://www.poolcafedekeu.nl/"
+  },
   {
     "title": "Studentenbar De Gieter",
     "desc": "Lautes und geselliges Studentenlokal mit extrem günstigen Bier-Pitchern. Perfekt für den unkomplizierten Start in den Abend.",
